@@ -1,0 +1,104 @@
+body {
+     background-color: rgb(244, 217, 244);
+     }
+
+.container  {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1024px;
+            }
+
+header  {
+        height: 118px;
+        text-align: center;
+        }
+
+nav     {
+        background-color: rgb(255, 192, 203);
+        text-align: center; 
+        padding-top: 14px;
+        padding-bottom: 14px;
+        }
+
+main    {
+        height: 400px;
+        text-align: center;
+        margin-top: 80px;
+        padding-left: 240px;
+        padding-right: 240px;
+        }
+
+footer  {
+        background-color: pink;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
+
+h1      {
+        font-size: 84px;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        }
+p {
+  font-size: 18px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+a {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;     
+  }
+
+nav a {
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px ;
+      }
+
+footer p {
+          font-size: 10px;
+          text-align: center;
+         }
+
+
+
+
+
+/*styling signup.php*/
+
+.signup-form {
+              max-width: 500px;
+              margin: 2rem auto;
+              border: 2px solid #f134a2;
+              border-radius: 50px;
+              background-color: #f2f2f2;
+              padding: 20px;
+             }  
+              
+input {
+       outline: none;
+       width: 90%;
+       padding: 20px 20px;
+       border: 1px solid #f134a2; 
+       border-radius: 40px;
+      }
+       
+label {
+       display: block;
+       padding: 1rem 0 .5rem;
+       color:rgb(181, 96, 178)
+      }
+
+input:focus {/*only occures when focues (so when clicked)*/
+        box-shadow: 0 0 4px rgb(187, 9, 247); 
+        border: 1px solid #b87cd7; 
+            }
+
+::placeholder {
+              color: rgb(181, 96, 178);  
+              }
+
+
+
