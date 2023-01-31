@@ -36,20 +36,20 @@ footer  {
 
 h1      {
         font-size: 84px;
-        color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        font-family: 'Dosis', sans-serif;
         text-align: center;
         }
 p {
   font-size: 18px;
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-family: 'Dosis', sans-serif;
   }
 
 a {
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;     
-  }
+  color: rgb(255, 255, 255);
+  font-family: 'Dosis', sans-serif;   
+  } 
 
 nav a {
         text-decoration: none;
@@ -62,8 +62,13 @@ footer p {
           text-align: center;
          }
 
-
-
+.btn{
+        border: 1px solid #f134a2;
+        background: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+}
 
 
 /*styling signup.php*/
@@ -99,6 +104,3 @@ input:focus {/*only occures when focues (so when clicked)*/
 ::placeholder {
               color: rgb(181, 96, 178);  
               }
-
-
-

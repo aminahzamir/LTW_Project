@@ -17,6 +17,8 @@ if (isset($_POST["signup-submit"])) {      /*checking that user pressed signup b
     require_once 'dbh-inc.php';      /*linking our db*/
     require_once 'functions-inc.php';
 
+    echo "<script>console.log('POST title: {$_POST["title"]} ,fname: {$_POST["firstname"]},sname: {$_POST["surname"]},streetname: {$_POST["streetname"]},cityname: {$_POST["cityname"]},doornum: {$_POST["doornum"]},postcode: {$_POST["postcode"]},email: {$_POST["email"]},username: {$_POST["username"]},password: {$_POST["pwd"]},passwordrepeat: {$_POST["pwdrepeat"]} ');</script>";
+
     if (emptyInputSignup($title, $fname, $sname, $streetname, $cityname, $doornum, $postcode, $email, $username, $password, $passwordrepeat) !== false) { /*check if user left input box empty*/ 
         header("location: ../signup.php?error=emptyinput"); /*error msg*/
         exit();
@@ -37,7 +39,7 @@ if (isset($_POST["signup-submit"])) {      /*checking that user pressed signup b
         exit();
     }    
 
-    if (usernameemailExists($conn, $username, $email) !== false) { /*check if username and email already exists in db*/ 
+    if (usernameOrEmailExists($conn, $username, $email) !== false) { /*check if username and email already exists in db*/ 
         header("location: ../signup.php?error=usernametaken"); 
         exit();
     }
