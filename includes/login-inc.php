@@ -14,6 +14,7 @@ if (isset($_POST["login-submit"])) {
     }
 
     loginUser($conn, $username, $password);
+    $_SESSION["memberusername"] = $username; /*setting the session*/
 
 }
 else {
